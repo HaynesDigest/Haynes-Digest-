@@ -19,7 +19,7 @@ Write a warm, conversational weekly digest email. Include:
 Keep the tone curious and enthusiastic, like a letter from a well-read friend. Do not use markdown headers with #, use plain text formatting instead.`
 
   const message = await client.messages.create({
-    model: 'claude-opus-4-20250514',
+    model: 'claude-sonnet-4-20250514',
     max_tokens: 1024,
     messages: [{ role: 'user', content: prompt }]
   })
